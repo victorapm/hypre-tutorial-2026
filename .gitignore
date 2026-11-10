@@ -1,0 +1,11 @@
+lab/.build-path
+__pycache__/
+*.pyc
+.DS_Store
+results/
+.cache/
+.env
+.env.*
+*.pem
+*.crt
+*.key

@@ -1,0 +1,101 @@
+Date and time: 2026-11-13 10:24:09
+
+Using HYPREDRV_DEVELOP_STRING: v0.4.0-0-g9ffb54a26 (HEAD)
+Using HYPRE_DEVELOP_STRING: v3.2.1-0-gc3feb783b (HEAD)
+---------------------------------------------------------------------------------------
+general: 
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+  print_config_params: 1
+linear_system: 
+  init_guess_mode: zeros
+solver: 
+  gmres: 
+    max_iter: 200
+    krylov_dim: 60
+    relative_tol: 1.0e-10
+    absolute_tol: 0.0
+    print_level: 2
+preconditioner: 
+  mgr: 
+    tolerance: 0.0
+    max_iter: 1
+    print_level: 0
+    coarse_th: 0.0
+    level: 
+      0: 
+        f_dofs: [1]
+        f_relaxation: jacobi
+        g_relaxation: none
+        restriction_type: injection
+        prolongation_type: jacobi
+        coarse_level_type: rap
+    coarsest_level: 
+      amg: 
+        tolerance: 0.0
+        max_iter: 1
+        print_level: 0
+---------------------------------------------------------------------------------------
+
+=====================================================
+              Darcy Mixed Problem Setup
+=====================================================
+Discretization:       RT0/P0
+Grid cells:           30 x 110 x 85
+Unknowns:             856700 flux + 280500 pressure = 1137200
+MPI ranks:            8
+MPI grid partition:   2 x 2 x 2 ranks
+Cell block target:    <= 15 x 55 x 43 cells/rank
+Row partition:        rank-contiguous spatial DOFs (139425-144910 rows/rank)
+Drive direction:      y
+Permeability file:    /tmp/stanford26-build/work/data/spe10_case2a/spe_perm.dat
+Permeability grid:    60 x 220 x 85 (top-down)
+=====================================================
+
+L2 norm of b: 5.049752e+01
+Initial L2 norm of residual: 5.049752e+01
+=============================================
+
+Iters      resid.norm     conv.rate   rel.res.norm
+-----    ------------    ----------   ------------
+    1    4.919115e+01      0.974130   9.741300e-01
+    2    1.021654e+01      0.207691   2.023177e-01
+    3    7.043362e+00      0.689408   1.394794e-01
+    4    2.035144e+00      0.288945   4.030185e-02
+    5    8.005761e-01      0.393376   1.585377e-02
+    6    2.439362e-01      0.304701   4.830657e-03
+    7    9.918574e-02      0.406605   1.964170e-03
+    8    2.938584e-02      0.296271   5.819263e-04
+    9    1.086310e-02      0.369671   2.151214e-04
+   10    3.474110e-03      0.319808   6.879762e-05
+   11    1.159867e-03      0.333860   2.296879e-05
+   12    3.919847e-04      0.337957   7.762454e-06
+   13    1.308086e-04      0.333708   2.590396e-06
+   14    4.849846e-05      0.370759   9.604126e-07
+   15    1.700203e-05      0.350568   3.366903e-07
+   16    6.743907e-06      0.396653   1.335493e-07
+   17    2.317963e-06      0.343712   4.590250e-08
+   18    8.550402e-07      0.368876   1.693232e-08
+   19    2.798806e-07      0.327330   5.542461e-09
+   20    1.082027e-07      0.386603   2.142733e-09
+   21    3.623302e-08      0.334862   7.175207e-10
+   22    1.270686e-08      0.350698   2.516332e-10
+   23    5.033787e-09      0.396147   9.968383e-11
+
+
+Final L2 norm of residual: 5.033792e-09
+
+heterogeneous pressure solve completed
+=======================================================================================
+
+
+STATISTICS SUMMARY:
+
++------------+-------------+-------------+-------------+------------+------------+--------+
+|            |    LS build |       setup |       solve |    initial |   relative |        |
+|      Entry |  times [ms] |  times [ms] |  times [ms] |  res. norm |  res. norm |  iters |
++------------+-------------+-------------+-------------+------------+------------+--------+
+|          0 |      19.977 |      66.997 |     156.713 |   5.05e+01 |   9.97e-11 |     23 |
++------------+-------------+-------------+-------------+------------+------------+--------+
+

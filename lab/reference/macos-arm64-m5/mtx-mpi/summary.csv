@@ -1,0 +1,3 @@
+case,entry,iterations,setup_ms,solve_ms,total_ms,assembly_ms,relative_residual
+fault-fsai-8,0,1342,718.816,8038.537,8757.353,3431.773,9.86e-09
+thermal1-amg-2,0,9,68.876,22.495,91.371,73.968,2.01e-09

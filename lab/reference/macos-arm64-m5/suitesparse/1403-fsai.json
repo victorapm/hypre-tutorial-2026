@@ -1,0 +1,19 @@
+{
+  "matrix_id": 1403,
+  "matrix": "Schmid/thermal2",
+  "policy": "fsai",
+  "solver": "PCG",
+  "status": "converged",
+  "iterations": 521,
+  "relative_residual": 9.94e-09,
+  "relative_error": 0.00023412055904599303,
+  "setup_ms": 2992.972,
+  "solve_ms": 16643.99,
+  "total_ms": 19636.962,
+  "assembly_ms": 1019.351,
+  "policy_sha256": "1d81323803708e4c43ee266f7e4ca603c5d79f2f630d0ee901c821339c1a2f36",
+  "input_sha256": "f22cafc97c150c1333545f519ee92226f8407ec281938a6a39b5ff685d61acf2",
+  "wall_seconds": 20.768,
+  "exit_code": 0,
+  "log_sha256": "77265ece31cc38d585dc189a57d6052714f99d5432d39094e97f8dba704986a9"
+}

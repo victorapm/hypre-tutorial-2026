@@ -1,0 +1,90 @@
+++ export LAB=/tutorial/lab WORK=/opt/hypre-tutorial/work
+++ LAB=/tutorial/lab
+++ WORK=/opt/hypre-tutorial/work
+++ export SPE10=/opt/hypre-tutorial/work/data/spe10_case2a/spe_perm.dat
+++ SPE10=/opt/hypre-tutorial/work/data/spe10_case2a/spe_perm.dat
+++ export CLI=/opt/hypre-tutorial/build/hypredrive-cli
+++ CLI=/opt/hypre-tutorial/build/hypredrive-cli
+++ export LAP=/opt/hypre-tutorial/build/laplacian
+++ LAP=/opt/hypre-tutorial/build/laplacian
+++ export DARCY=/opt/hypre-tutorial/build/darcy
+++ DARCY=/opt/hypre-tutorial/build/darcy
+++ export CONVDIF=/opt/hypre-tutorial/build/convdif
+++ CONVDIF=/opt/hypre-tutorial/build/convdif
+++ export MAXWELL=/opt/hypre-tutorial/build/maxwell
+++ MAXWELL=/opt/hypre-tutorial/build/maxwell
+++ export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1
+++ OMP_NUM_THREADS=1
+++ OPENBLAS_NUM_THREADS=1
+++ VECLIB_MAXIMUM_THREADS=1
+++ unset _stanford_lab _stanford_root
+++ [[ 0 == 0 ]]
+++ set +x
+
+  ┌────────────────────────────────────────────────────────────────────────────────┐
+  │ ██╗  ██╗██╗   ██╗██████╗ ██████╗ ███████╗ ██████╗ ██████╗ ██╗██╗   ██╗███████╗ │
+  │ ██║  ██║╚██╗ ██╔╝██╔══██╗██╔══██╗██╔════╝ ██╔══██╗██╔══██╗██║██║   ██║██╔════╝ │
+  │ ███████║ ╚████╔╝ ██████╔╝██████╔╝█████╗   ██║  ██║██████╔╝██║██║   ██║█████╗   │
+  │ ██╔══██║  ╚██╔╝  ██╔═══╝ ██╔══██╗██╔══╝   ██║  ██║██╔══██╗██║╚██╗ ██╔╝██╔══╝   │
+  │ ██║  ██║   ██║   ██║     ██║  ██║███████╗ ██████╔╝██║  ██║██║ ╚████╔╝ ███████╗ │
+  │ ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝  ╚══════╝ │
+  └────────────────────────────────────────────────────────────────────────────────┘
+
+Date and time: 2026-11-13 15:32:18
+
+Using HYPREDRV_DEVELOP_STRING: v0.4.0-0-g9ffb54a26 (HEAD)
+Using HYPRE_DEVELOP_STRING: v3.2.1-0-gc3feb783b (HEAD)
+---------------------------------------------------------------------------------------
+general: 
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+linear_system: 
+  type: mtx
+  matrix_filename: data/thermal1.mtx
+  rhs_mode: randsol
+  init_guess_mode: zeros
+solver: 
+  pcg: 
+    print_level: 2
+    max_iter: 1500
+    relative_tol: 1.0e-8
+preconditioner: amg
+---------------------------------------------------------------------------------------
+HYPRE execution policy: Host
+
+=======================================================================================
+Solving linear system #0 with 82654 rows and 574458 nonzeros...
+<b,b>: 4.845397e+05
+
+
+Iters       ||r||_2     conv.rate  ||r||_2/||b||_2
+-----    ------------   ---------  ------------ 
+    1    3.339952e+01    0.047982    4.798169e-02
+    2    3.188833e+00    0.095475    4.581071e-03
+    3    3.368358e-01    0.105630    4.838978e-04
+    4    3.871665e-02    0.114942    5.562026e-05
+    5    4.888985e-03    0.126276    7.023507e-06
+    6    6.578565e-04    0.134559    9.450754e-07
+    7    8.668624e-05    0.131771    1.245333e-07
+    8    1.104068e-05    0.127364    1.586102e-08
+    9    1.402048e-06    0.126989    2.014180e-09
+
+
+L2 norm of error: 1.945916e-06
+L2 norm of solution: 1.663293e+02
+L2 norm of ref. solution: 1.663293e+02
+=======================================================================================
+
+
+STATISTICS SUMMARY:
+
++------------+-------------+-------------+-------------+------------+------------+--------+
+|            |    LS build |       setup |       solve |    initial |   relative |        |
+|      Entry |  times [ms] |  times [ms] |  times [ms] |  res. norm |  res. norm |  iters |
++------------+-------------+-------------+-------------+------------+------------+--------+
+|          0 |      99.367 |      71.131 |      24.191 |   6.96e+02 |   2.01e-09 |      9 |
++------------+-------------+-------------+-------------+------------+------------+--------+
+
+Date and time: 2026-11-13 15:32:18
+/opt/hypre-tutorial/bin/hypredrive-cli done!

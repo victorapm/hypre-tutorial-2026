@@ -1,0 +1,110 @@
+[561e36f94bf0:00286] [[64681,0],0] ORTE_ERROR_LOG: Data unpack would read past end of buffer in file ../../../orte/util/show_help.c at line 507
+--------------------------------------------------------------------------
+WARNING: Linux kernel CMA support was requested via the
+btl_vader_single_copy_mechanism MCA variable, but CMA support is
+not available due to restrictive ptrace settings.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: 561e36f94bf0
+--------------------------------------------------------------------------
+[561e36f94bf0:00286] 6 more processes have sent help message help-btl-vader.txt / cma-permission-denied
+[561e36f94bf0:00286] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Date and time: 2026-11-13 15:35:35
+
+Using HYPREDRV_DEVELOP_STRING: v0.4.0-0-g9ffb54a26 (HEAD)
+Using HYPRE_DEVELOP_STRING: v3.2.1-0-gc3feb783b (HEAD)
+---------------------------------------------------------------------------------------
+general: 
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+  print_config_params: 1
+linear_system: 
+  init_guess_mode: zeros
+solver: 
+  gmres: 
+    max_iter: 200
+    krylov_dim: 60
+    relative_tol: 1.0e-10
+    absolute_tol: 0.0
+    print_level: 2
+preconditioner: 
+  mgr: 
+    tolerance: 0.0
+    max_iter: 1
+    print_level: 0
+    coarse_th: 0.0
+    level: 
+      0: 
+        f_dofs: [1]
+        f_relaxation: jacobi
+        g_relaxation: none
+        restriction_type: injection
+        prolongation_type: jacobi
+        coarse_level_type: rap
+    coarsest_level: 
+      amg: 
+        tolerance: 0.0
+        max_iter: 2
+        print_level: 0
+---------------------------------------------------------------------------------------
+
+=====================================================
+              Darcy Mixed Problem Setup
+=====================================================
+Discretization:       RT0/P0
+Grid cells:           30 x 110 x 85
+Unknowns:             856700 flux + 280500 pressure = 1137200
+MPI ranks:            8
+MPI grid partition:   2 x 2 x 2 ranks
+Cell block target:    <= 15 x 55 x 43 cells/rank
+Row partition:        rank-contiguous spatial DOFs (139425-144910 rows/rank)
+Drive direction:      y
+Permeability file:    /opt/hypre-tutorial/work/data/spe10_case2a/spe_perm.dat
+Permeability grid:    60 x 220 x 85 (top-down)
+=====================================================
+
+L2 norm of b: 5.049752e+01
+Initial L2 norm of residual: 5.049752e+01
+=============================================
+
+Iters      resid.norm     conv.rate   rel.res.norm
+-----    ------------    ----------   ------------
+    1    3.131406e+01      0.620111   6.201108e-01
+    2    5.652466e+00      0.180509   1.119355e-01
+    3    2.374892e+00      0.420152   4.702988e-02
+    4    5.609447e-01      0.236198   1.110836e-02
+    5    1.818482e-01      0.324182   3.601131e-03
+    6    4.705267e-02      0.258747   9.317817e-04
+    7    1.567187e-02      0.333071   3.103492e-04
+    8    3.935453e-03      0.251116   7.793358e-05
+    9    1.255948e-03      0.319137   2.487148e-05
+   10    3.102600e-04      0.247032   6.144063e-06
+   11    9.653734e-05      0.311150   1.911724e-06
+   12    2.531401e-05      0.262220   5.012921e-07
+   13    7.730968e-06      0.305403   1.530960e-07
+   14    2.047284e-06      0.264816   4.054227e-08
+   15    6.308834e-07      0.308156   1.249335e-08
+   16    1.729226e-07      0.274096   3.424377e-09
+   17    5.307213e-08      0.306913   1.050985e-09
+   18    1.603958e-08      0.302222   3.176310e-10
+   19    4.642155e-09      0.289419   9.192836e-11
+
+
+Final L2 norm of residual: 4.642902e-09
+
+heterogeneous pressure solve completed
+=======================================================================================
+
+
+STATISTICS SUMMARY:
+
++------------+-------------+-------------+-------------+------------+------------+--------+
+|            |    LS build |       setup |       solve |    initial |   relative |        |
+|      Entry |  times [ms] |  times [ms] |  times [ms] |  res. norm |  res. norm |  iters |
++------------+-------------+-------------+-------------+------------+------------+--------+
+|          0 |     950.427 |    2434.754 |    8257.959 |   5.05e+01 |   9.19e-11 |     19 |
++------------+-------------+-------------+-------------+------------+------------+--------+
+

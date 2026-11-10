@@ -1,0 +1,22 @@
+{
+  "recorded_utc": "2026-11-13T15:36:39.379217+00:00",
+  "host": "Apple M5 Max, macOS 26.7.1",
+  "runtime": "Colima, macOS Virtualization.Framework, Docker",
+  "image_platform": "linux/amd64",
+  "emulated": true,
+  "image_id": "sha256:62af64bd82412d906d82bbf46e18b88285cda08a1cef8df060ae483df4af5744",
+  "image_bytes": 294667147,
+  "virtual_cpus": 2,
+  "vm_memory_bytes": 2053578752,
+  "docker_server": "29.5.2",
+  "ubuntu_base": "ubuntu:24.04@sha256:fe81560990fae86dc4743202b2cb4d3df98d0bcf949173cecef15ce1127ef852",
+  "binary_sha256": {
+    "hypredrive-cli": "eba7a44d9978dc7bb4b7bbbab3d073e6faab98f75fbf26b15dba956350382987",
+    "laplacian": "5cf4d1701580f15204e67c207d7683579373a755f9d93a8cbd1cdf38b0b22f4d",
+    "darcy": "2b5b9f98207f5cf68c4a7ee7526158956f6b9c3600618d39d7f23bb806d79c72",
+    "convdif": "06ea9f5dd84ecf4e805949be56165dd9ebedc5830f62d1cc4f6c1e403a81d63d",
+    "maxwell": "d3a2b3098be23828d580735b0c8af505a7816ef9c1e663d933ac11a42317d863"
+  },
+  "validation": "Labs 1-4; 8-rank SPE10/MGR; 1/2/4-rank MPI; 2-rank MTX; transport and Maxwell",
+  "measurements": "Individual validation runs. Eight-rank SPE10 and four-rank MPI oversubscribe two virtual CPUs. No scaling or native-host speedup claims."
+}

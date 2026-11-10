@@ -1,0 +1,19 @@
+{
+  "matrix_id": 2543,
+  "matrix": "Janna/Fault_639",
+  "policy": "fsai",
+  "solver": "PCG",
+  "status": "converged",
+  "iterations": 226,
+  "relative_residual": 9.82e-09,
+  "relative_error": 0.00016173526157027757,
+  "setup_ms": 4931.038,
+  "solve_ms": 7017.576,
+  "total_ms": 11948.614,
+  "assembly_ms": 3242.429,
+  "policy_sha256": "261685100c6475d8e2ea5faa9a4c5c9d944858ad158fc33afc84d2356fbd215a",
+  "input_sha256": "3532687ad96b4762135bc438e940b7c644727fb6fd8e19eb2099f0a4b6596984",
+  "wall_seconds": 15.313,
+  "exit_code": 0,
+  "log_sha256": "71d33d882f790a09a6569711f244d130180ccf255ff2408497d67873434540ab"
+}

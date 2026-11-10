@@ -1,0 +1,19 @@
+{
+  "matrix_id": 1883,
+  "matrix": "McRae/ecology2",
+  "policy": "fsai",
+  "solver": "PCG",
+  "status": "converged",
+  "iterations": 455,
+  "relative_residual": 9.81e-09,
+  "relative_error": 0.00046299848409179844,
+  "setup_ms": 1589.476,
+  "solve_ms": 6395.264,
+  "total_ms": 7984.74,
+  "assembly_ms": 455.05,
+  "policy_sha256": "7b97a18929317f281d7f78269e1e3c06bc45a64465a0fa043436dc15a1758afa",
+  "input_sha256": "54a1ac678e4d20a2b8b41f86de196dbb0ea5c354cc2cbc8940025ea547202176",
+  "wall_seconds": 8.535,
+  "exit_code": 0,
+  "log_sha256": "112f7dbf05215f0ee71d6b17709f522f8c08c3e781ffc469a89413d9d1b6014d"
+}

@@ -1,0 +1,60 @@
+Native macOS CPU reference, hypredrive v0.4.0 and hypre v3.2.1
+
+{
+  "recorded_utc": "2026-11-13T15:24:15.026682+00:00",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "cpu": "Apple M5 Max",
+  "cpu_count": 18,
+  "memory_bytes": 137438953472,
+  "hypredrive_version": "v0.4.0",
+  "hypredrive_revision": "9ffb54a2621e454f7c060d11b9667f08a0085060",
+  "hypre_version": "v3.2.1",
+  "hypre_revision": "c3feb783b21b3465e30c29e883325aa766a5b8f4",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "mpi": "HYDRA build details:\n    Version:                                 5.0.2\n    Release Date:                            Fri Sep 25 20:45:26 UTC 2026",
+  "mpi_wrapper": "clang -I/opt/homebrew/Cellar/mpich/5.0.2/include -L/opt/homebrew/Cellar/mpich/5.0.2/lib -lmpi -lpmpi",
+  "cmake": "cmake version 4.4.4",
+  "python": "3.14.8",
+  "build": "CPU Release; OpenMP, CUDA, HIP and SYCL disabled",
+  "threads_per_rank": 1,
+  "lab_mpi_ranks": {
+    "1": 1,
+    "2": 1,
+    "3": 8,
+    "4": 1
+  },
+  "optional_mpi_ranks": [
+    1,
+    2,
+    4
+  ],
+  "source_pins": {
+    "HYPREDRIVE_VERSION": "v0.4.0",
+    "HYPREDRIVE_REV": "9ffb54a2621e454f7c060d11b9667f08a0085060",
+    "HYPRE_REV": "v3.2.1"
+  },
+  "policies": {
+    "file-amg.yml": "f340da052040707e7a80e4a064f60f0afcbe3ead43d1fe10eb9952b86d87313d",
+    "gmres-fsai-k5.yml": "068748c02d4c92b44d089060eaacd0272ec7b8080ed183ac689626022c0e6ff3",
+    "pcg-fsai.yml": "d416a8c1fc340598282434afa92d32e4eeee14b37728973fe4e1351c104f0e66",
+    "pcg-jacobi.yml": "91f0535fada707024d42b27e7eed19763635aa1691535c25f9b83e6d17de21d4",
+    "darcy-mgr-strong.yml": "bf17f705051571d5e51868cf83c3a96c8042e69231029af007d3771d8a181b16",
+    "gmres-fsai.yml": "dd11af0b20376b1ab177feb97fb872bdc99e2374f63b8a7f4fcc23551dd1f715",
+    "file-fsai.yml": "851de35daa287b1a9f45bd6020959f8ece71af2b01a7e1fd41fd44bf6f96d747",
+    "darcy-mgr-default.yml": "0edf135e8eb5a686da7266d13f63aff6a7be50b97d369514301a2c371eb61958",
+    "pcg-amg.yml": "0972dd2b27d719570151ebca7e00d6e9d657ad32369f686ed29162bc39b482b3",
+    "gmres-amg.yml": "9bb1e14173bb8d905408552b2024febd2089e047a656ac4db21cb5b12f992239",
+    "pcg-ams.yml": "7d46cf0719f46b5cdf8240088164f190407301850c0b041fdd8da7828bcbe1c5",
+    "file-ilu.yml": "d82ae0f94930cf971680eaa27ecff334796a7eb85af01c72915a0d105119d360",
+    "bicgstab-fsai.yml": "fcc5be17cfb761d731396d7d09451ce9d65907f1142876de349295a348735fc8"
+  },
+  "runner_sha256": "d3e4f5cc8ed18dd2a876bf0386268bd39606766b0e063e4a4cd84583b185b55c",
+  "binary_sha256": {
+    "hypredrive-cli": "317a3c4ae2ff71fce145f36724b37d79533f2a1f72b1ff01152a7eec8bcd53c0",
+    "laplacian": "b38fe25fcb1677533e918218cad80c9cbd465a12265a17ede7ef656ecc5bdccb",
+    "darcy": "4b6a1c46ffa4a63e83eecc430b94a58aade578f7ed9381762d362081e289de31",
+    "convdif": "6a791b90d641530e5e408681a621bd95f23c9fc543ef42557fc8ff42dfc5a5e1",
+    "maxwell": "dd16827850be1ba8a1b598a413f9e54e80e491bee98d1788e210b6f2367edc57"
+  }
+}

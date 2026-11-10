@@ -1,0 +1,28 @@
+general:
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+linear_system:
+  init_guess_mode: zeros
+solver:
+  pcg:
+    max_iter: 500
+    print_level: 2
+    relative_tol: 1.0e-8
+
+preconditioner:
+  ams:
+    max_iter: 1
+    cycle_type: 1
+    print_level: 0
+    relax_type: 1
+    alpha_coarsen_type: 8
+    alpha_relax_type: 18
+    alpha_interp_type: 6
+    alpha_Pmax: 4
+    alpha_coarse_relax_type: 18
+    beta_coarsen_type: 8
+    beta_relax_type: 18
+    beta_interp_type: 6
+    beta_Pmax: 4
+    beta_coarse_relax_type: 18

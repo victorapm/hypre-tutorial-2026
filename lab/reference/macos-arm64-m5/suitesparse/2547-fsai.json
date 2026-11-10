@@ -1,0 +1,19 @@
+{
+  "matrix_id": 2547,
+  "matrix": "Janna/StocF-1465",
+  "policy": "fsai",
+  "solver": "PCG",
+  "status": "converged",
+  "iterations": 328,
+  "relative_residual": 9.78e-09,
+  "relative_error": 0.01127736217913663,
+  "setup_ms": 5317.758,
+  "solve_ms": 13829.064,
+  "total_ms": 19146.822,
+  "assembly_ms": 2155.108,
+  "policy_sha256": "a28680d7755ca29df1a17018198e63db265b13b9a0c50a695e88c527c2ae3ece",
+  "input_sha256": "1a91c655d8c43ac3458ab4b04954a304e5a24680310f7b02096f7e1533816305",
+  "wall_seconds": 21.416,
+  "exit_code": 0,
+  "log_sha256": "c46a88af2a34beef74d3de40fbad6de243562ec94da030eb2e1f0193395287cd"
+}

@@ -1,0 +1,19 @@
+{
+  "matrix_id": 1883,
+  "matrix": "McRae/ecology2",
+  "policy": "amg",
+  "solver": "PCG",
+  "status": "converged",
+  "iterations": 7,
+  "relative_residual": 1.73e-09,
+  "relative_error": 1.1994464709099277e-08,
+  "setup_ms": 300.843,
+  "solve_ms": 320.034,
+  "total_ms": 620.877,
+  "assembly_ms": 454.806,
+  "policy_sha256": "700c3882886946c73fe1f1cdafea5a092947184f3ccb7a6ee65e308323ce26e6",
+  "input_sha256": "54a1ac678e4d20a2b8b41f86de196dbb0ea5c354cc2cbc8940025ea547202176",
+  "wall_seconds": 1.164,
+  "exit_code": 0,
+  "log_sha256": "2221d99ea4099161b9f954e686279643f7e7aaaca36f74141dc87300e5d15fd0"
+}

@@ -1,0 +1,15 @@
+general:
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+linear_system:
+  type: mtx
+  matrix_filename: data/suitesparse/2542/matrix.mtx
+  rhs_mode: randsol
+  init_guess_mode: zeros
+solver:
+  pcg:
+    print_level: 2
+    max_iter: 1500
+    relative_tol: 1.0e-8
+preconditioner: fsai

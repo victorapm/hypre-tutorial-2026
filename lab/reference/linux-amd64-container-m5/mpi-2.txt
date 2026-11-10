@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------
+WARNING: Linux kernel CMA support was requested via the
+btl_vader_single_copy_mechanism MCA variable, but CMA support is
+not available due to restrictive ptrace settings.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: 5f215faffe5f
+--------------------------------------------------------------------------
+Date and time: 2026-11-13 15:36:26
+
+Using HYPREDRV_DEVELOP_STRING: v0.4.0-0-g9ffb54a26 (HEAD)
+Using HYPRE_DEVELOP_STRING: v3.2.1-0-gc3feb783b (HEAD)
+---------------------------------------------------------------------------------------
+general: 
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+  print_config_params: 1
+linear_system: 
+  init_guess_mode: zeros
+solver: 
+  pcg: 
+    print_level: 2
+    max_iter: 1000
+    relative_tol: 1.0e-8
+preconditioner: amg
+---------------------------------------------------------------------------------------
+
+=====================================================
+              Laplacian Problem Setup
+=====================================================
+Grid dimensions:      48 x 48 x 48
+Processor topology:   2 x 1 x 1
+Diffusion coeffs:     (1.00e+00, 1.00e+00, 1.00e+00)
+Discretization:       7-point stencil
+Visualization:        false
+Verbosity level:      0x1
+Number of solves:     1
+=====================================================
+
+Assembling linear system... Done!
+Solve 1/1...
+<b,b>: 2.304000e+03
+
+
+Iters       ||r||_2     conv.rate  ||r||_2/||b||_2
+-----    ------------   ---------  ------------ 
+    1    7.799120e+00    0.162482    1.624817e-01
+    2    3.348457e-01    0.042934    6.975953e-03
+    3    2.276810e-02    0.067996    4.743355e-04
+    4    1.386987e-03    0.060918    2.889557e-05
+    5    1.318544e-04    0.095065    2.746967e-06
+    6    8.742230e-06    0.066302    1.821298e-07
+    7    7.597830e-07    0.086910    1.582881e-08
+    8    5.345471e-08    0.070355    1.113640e-09
+
+
+=======================================================================================
+
+
+STATISTICS SUMMARY:
+
++------------+-------------+-------------+-------------+------------+------------+--------+
+|            |    LS build |       setup |       solve |    initial |   relative |        |
+|      Entry |  times [ms] |  times [ms] |  times [ms] |  res. norm |  res. norm |  iters |
++------------+-------------+-------------+-------------+------------+------------+--------+
+|          0 |      96.354 |     767.715 |     402.082 |   4.80e+01 |   1.11e-09 |      8 |
++------------+-------------+-------------+-------------+------------+------------+--------+
+
+[5f215faffe5f:00080] 1 more process has sent help message help-btl-vader.txt / cma-permission-denied
+[5f215faffe5f:00080] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

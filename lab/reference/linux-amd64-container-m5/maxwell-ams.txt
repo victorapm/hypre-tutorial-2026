@@ -1,0 +1,79 @@
+Date and time: 2026-11-13 15:36:37
+
+Using HYPREDRV_DEVELOP_STRING: v0.4.0-0-g9ffb54a26 (HEAD)
+Using HYPRE_DEVELOP_STRING: v3.2.1-0-gc3feb783b (HEAD)
+---------------------------------------------------------------------------------------
+general: 
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+  print_config_params: 1
+linear_system: 
+  init_guess_mode: zeros
+solver: 
+  pcg: 
+    max_iter: 500
+    print_level: 2
+    relative_tol: 1.0e-8
+preconditioner: 
+  ams: 
+    max_iter: 1
+    cycle_type: 1
+    print_level: 0
+    relax_type: 1
+    alpha_coarsen_type: 8
+    alpha_relax_type: 18
+    alpha_interp_type: 6
+    alpha_Pmax: 4
+    alpha_coarse_relax_type: 18
+    beta_coarsen_type: 8
+    beta_relax_type: 18
+    beta_interp_type: 6
+    beta_Pmax: 4
+    beta_coarse_relax_type: 18
+---------------------------------------------------------------------------------------
+
+Definite Maxwell (curl-curl + mass), Nedelec edge elements + AMS
+  grid (nodes) : 12 x 12 x 12
+  procs        : 1 x 1 x 1
+  global edges : 4752
+  frequency    : kappa = 1 * pi
+  coefficients : muinv = 1, sigma = 1
+
+<b,b>: 4.230870e+02
+
+
+Iters       ||r||_2     conv.rate  ||r||_2/||b||_2
+-----    ------------   ---------  ------------ 
+    1    6.781656e+00    0.329701    3.297015e-01
+    2    2.028399e+00    0.299101    9.861400e-02
+    3    7.692126e-01    0.379222    3.739655e-02
+    4    2.131145e-01    0.277055    1.036092e-02
+    5    6.143130e-02    0.288255    2.986585e-03
+    6    1.981433e-02    0.322545    9.633068e-04
+    7    6.147811e-03    0.310271    2.988861e-04
+    8    1.818512e-03    0.295798    8.841000e-05
+    9    5.458333e-04    0.300154    2.653659e-05
+   10    1.729586e-04    0.316871    8.408668e-06
+   11    4.888265e-05    0.282626    2.376511e-06
+   12    1.215772e-05    0.248712    5.910678e-07
+   13    3.246806e-06    0.267057    1.578489e-07
+   14    8.629266e-07    0.265777    4.195261e-08
+   15    2.512239e-07    0.291130    1.221367e-08
+   16    6.274265e-08    0.249748    3.050339e-09
+
+
+=======================================================================================
+
+
+STATISTICS SUMMARY:
+
++------------+-------------+-------------+-------------+------------+------------+--------+
+|            |    LS build |       setup |       solve |    initial |   relative |        |
+|      Entry |  times [ms] |  times [ms] |  times [ms] |  res. norm |  res. norm |  iters |
++------------+-------------+-------------+-------------+------------+------------+--------+
+|          0 |             |     126.379 |     255.528 |   2.06e+01 |   3.05e-09 |     16 |
++------------+-------------+-------------+-------------+------------+------------+--------+
+
+
+Discretization error (relative l2 over edge DOFs): 2.840859e-04

@@ -1,0 +1,14 @@
+{
+  "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+  "architecture": "x86_64",
+  "hypredrive_version": "v0.4.0",
+  "hypre_version": "v3.2.1",
+  "hypredrive_revision": "9ffb54a2621e454f7c060d11b9667f08a0085060",
+  "hypre_revision": "c3feb783b21b3465e30c29e883325aa766a5b8f4",
+  "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin",
+  "mpi": "mpiexec (OpenRTE) 4.1.6\n\nReport bugs to http://www.open-mpi.org/community/help/",
+  "cmake": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).",
+  "python": "3.12.3",
+  "build": "Release; OpenMP, CUDA, HIP and SYCL disabled",
+  "runtime": "CPU, one thread per rank; Lab 3 uses 8 ranks on a 2x2x2 grid; optional MPI uses 1/2/4 ranks"
+}

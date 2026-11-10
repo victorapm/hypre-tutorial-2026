@@ -1,0 +1,19 @@
+{
+  "matrix_id": 1403,
+  "matrix": "Schmid/thermal2",
+  "policy": "ilu",
+  "solver": "GMRES(50)",
+  "status": "converged",
+  "iterations": 606,
+  "relative_residual": 9.99e-09,
+  "relative_error": 0.0012114703823841201,
+  "setup_ms": 119.572,
+  "solve_ms": 28368.953,
+  "total_ms": 28488.525,
+  "assembly_ms": 1054.608,
+  "policy_sha256": "8cd00871837bd106eccf6c31d8484b8d0a30175b3e3369aa8c7714026464cb58",
+  "input_sha256": "f22cafc97c150c1333545f519ee92226f8407ec281938a6a39b5ff685d61acf2",
+  "wall_seconds": 29.641,
+  "exit_code": 0,
+  "log_sha256": "2e526744a45db34c59cb2b4ca1ddef4cdf8d4296e62aad5269975f3b3bb15362"
+}

@@ -1,0 +1,19 @@
+{
+  "matrix_id": 2543,
+  "matrix": "Janna/Fault_639",
+  "policy": "ilu",
+  "solver": "GMRES(50)",
+  "status": "unconverged",
+  "iterations": 1500,
+  "relative_residual": 1.56e-05,
+  "relative_error": 0.0551887077618536,
+  "setup_ms": 480.456,
+  "solve_ms": 75037.352,
+  "total_ms": 75517.808,
+  "assembly_ms": 3281.712,
+  "policy_sha256": "7481b27759ef25739b24db231c2848b503230630b279ba652bd915adc4706b6e",
+  "input_sha256": "3532687ad96b4762135bc438e940b7c644727fb6fd8e19eb2099f0a4b6596984",
+  "wall_seconds": 78.905,
+  "exit_code": 0,
+  "log_sha256": "97d33553c2e6c0c4d4d3bca483c34697fa5bd70f8b9e9232d002af921c1fada1"
+}

@@ -1,0 +1,12 @@
+general:
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+linear_system:
+  init_guess_mode: zeros
+solver:
+  pcg:
+    print_level: 2
+    max_iter: 1000
+    relative_tol: 1.0e-8
+preconditioner: amg

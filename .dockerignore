@@ -1,0 +1,11 @@
+**
+!Dockerfile
+!container/
+!container/build.sh
+!container/entrypoint.sh
+!lab/
+!lab/**
+**/.build-path
+**/__pycache__
+**/*.pyc
+lab/out

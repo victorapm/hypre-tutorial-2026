@@ -1,0 +1,140 @@
+Date and time: 2026-11-13 15:35:10
+
+Using HYPREDRV_DEVELOP_STRING: v0.4.0-0-g9ffb54a26 (HEAD)
+Using HYPRE_DEVELOP_STRING: v3.2.1-0-gc3feb783b (HEAD)
+---------------------------------------------------------------------------------------
+general: 
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+  print_config_params: 1
+linear_system: 
+  init_guess_mode: zeros
+solver: 
+  pcg: 
+    print_level: 2
+    max_iter: 1000
+    relative_tol: 1.0e-8
+preconditioner: 
+  amg: 
+    print_level: 1
+    aggressive: 
+      num_levels: 2
+---------------------------------------------------------------------------------------
+
+=====================================================
+              Laplacian Problem Setup
+=====================================================
+Grid dimensions:      48 x 48 x 48
+Processor topology:   1 x 1 x 1
+Diffusion coeffs:     (1.00e+00, 1.00e+00, 1.00e+00)
+Discretization:       7-point stencil
+Visualization:        false
+Verbosity level:      0x1
+Number of solves:     1
+=====================================================
+
+Assembling linear system... Done!
+Solve 1/1...
+
+
+ Num MPI tasks = 1
+ Num OpenMP threads = 1
+ Execution policy = Host
+
+ Max levels = 25
+ Num levels = 5
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = HMIS 
+
+ No. of levels of aggressive coarsening: 2
+
+ Interpolation on agg. levels = multipass
+ measures are determined locally
+
+ Interpolation = extended+i
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0  110592   760320  0.000     4    7     6.9   0.000e+00   3.000e+00
+  1    9223   156271  0.002     9   22    16.9   2.831e-15   8.032e+00
+  2     349     6835  0.056     7   29    19.6   9.923e-15   5.510e+01
+  3      80     2614  0.408    17   60    32.7   2.651e+00   1.152e+02
+  4      12      144  1.000    12   12    12.0   6.048e+01   2.062e+02
+
+
+Interpolation Matrix Information:
+                      entries/row        min        max            row sums
+lev   rows x cols   min  max  avgW     weight      weight       min         max
+==================================================================================
+  0 110592 x 9223     1    7   2.2   2.646e-02   8.333e-01   2.778e-01   1.000e+00
+  1   9223 x 349      1    7   1.8   1.227e-03   1.000e+00   1.481e-01   1.000e+00
+  2    349 x 80       1    4   3.9   1.137e-02   4.329e-01   3.604e-01   1.000e+00
+  3     80 x 12       1    4   3.9   9.550e-03   3.417e-01   1.177e-01   1.000e+00
+
+
+     Complexity:   grid = 1.087384
+               operator = 1.218150
+                 memory = 1.543156
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:     13   14     9 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+<b,b>: 2.304000e+03
+
+
+Iters       ||r||_2     conv.rate  ||r||_2/||b||_2
+-----    ------------   ---------  ------------ 
+    1    7.693727e+00    0.160286    1.602860e-01
+    2    2.351241e+00    0.305605    4.898418e-02
+    3    6.903153e-01    0.293596    1.438157e-02
+    4    2.265612e-01    0.328200    4.720025e-03
+    5    8.506221e-02    0.375449    1.772129e-03
+    6    3.498699e-02    0.411311    7.288955e-04
+    7    1.249406e-02    0.357106    2.602928e-04
+    8    4.748607e-03    0.380069    9.892931e-05
+    9    1.770181e-03    0.372779    3.687876e-05
+   10    6.378546e-04    0.360333    1.328864e-05
+   11    2.223765e-04    0.348632    4.632844e-06
+   12    7.424677e-05    0.333879    1.546808e-06
+   13    2.596538e-05    0.349717    5.409454e-07
+   14    8.435330e-06    0.324868    1.757361e-07
+   15    2.724597e-06    0.322998    5.676244e-08
+   16    9.296914e-07    0.341222    1.936857e-08
+   17    3.132675e-07    0.336959    6.526406e-09
+
+
+=======================================================================================
+
+
+STATISTICS SUMMARY:
+
++------------+-------------+-------------+-------------+------------+------------+--------+
+|            |    LS build |       setup |       solve |    initial |   relative |        |
+|      Entry |  times [ms] |  times [ms] |  times [ms] |  res. norm |  res. norm |  iters |
++------------+-------------+-------------+-------------+------------+------------+--------+
+|          0 |     177.079 |     558.110 |     724.487 |   4.80e+01 |   6.53e-09 |     17 |
++------------+-------------+-------------+-------------+------------+------------+--------+
+

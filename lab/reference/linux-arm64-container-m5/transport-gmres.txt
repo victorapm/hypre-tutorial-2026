@@ -1,0 +1,119 @@
+Date and time: 2026-11-13 15:32:19
+
+Using HYPREDRV_DEVELOP_STRING: v0.4.0-0-g9ffb54a26 (HEAD)
+Using HYPRE_DEVELOP_STRING: v3.2.1-0-gc3feb783b (HEAD)
+---------------------------------------------------------------------------------------
+general: 
+  statistics: 1
+  exec_policy: host
+  use_millisec: on
+  print_config_params: 1
+linear_system: 
+  init_guess_mode: zeros
+solver: 
+  gmres: 
+    print_level: 2
+    max_iter: 1000
+    relative_tol: 1.0e-8
+    krylov_dim: 30
+preconditioner: amg
+---------------------------------------------------------------------------------------
+
+=====================================================
+        Convection-Diffusion Problem Setup
+=====================================================
+Grid dimensions:      32 x 8 x 8 cells
+Processor topology:   1 x 1 x 1
+Domain sizes:         4.00 x 1.00 x 1.00
+Diffusion coeff:      1.00e-04
+Peak axial velocity:  1.00e+00
+Peak swirl velocity:  2.00e+00
+Cell Peclet number:   1.25e+03
+Initial CFL number:   8.00e-01
+Time steps:           3
+Initial step size:    1.00e-01
+Step growth factor:   1.50
+Visualization:        false
+Verbosity level:      0x1
+=====================================================
+
+L2 norm of b: 6.685024e-02
+Initial L2 norm of residual: 6.685024e-02
+=============================================
+
+Iters      resid.norm     conv.rate   rel.res.norm
+-----    ------------    ----------   ------------
+    1    4.210581e-03      0.062985   6.298528e-02
+    2    2.933252e-04      0.069664   4.387796e-03
+    3    2.273734e-05      0.077516   3.401235e-04
+    4    1.480129e-06      0.065097   2.214097e-05
+    5    9.569640e-08      0.064654   1.431504e-06
+    6    5.223261e-09      0.054582   7.813377e-08
+    7    2.201986e-10      0.042157   3.293909e-09
+
+
+Final L2 norm of residual: 2.201986e-10
+
+Time step:   1 | Time: 1.0000e-01 | dt: 1.0000e-01 | CFL:     0.80 | Lin:   7 | min(c)= 3.87e-17 max(c)= 4.28e-01 mass=4.526205e-02
+L2 norm of b: 9.552605e-02
+Initial L2 norm of residual: 4.525810e-02
+=============================================
+
+Iters      resid.norm     conv.rate   rel.res.norm
+-----    ------------    ----------   ------------
+    1    4.407611e-03      0.097388   4.614041e-02
+    2    3.091875e-04      0.070149   3.236683e-03
+    3    2.590943e-05      0.083798   2.712290e-04
+    4    2.083155e-06      0.080401   2.180720e-05
+    5    1.374509e-07      0.065982   1.438884e-06
+    6    8.964672e-09      0.065221   9.384531e-08
+    7    4.337299e-10      0.048382   4.540435e-09
+
+
+Final L2 norm of residual: 4.337299e-10
+
+Time step:   2 | Time: 2.5000e-01 | dt: 1.5000e-01 | CFL:     1.20 | Lin:   7 | min(c)= 3.85e-13 max(c)= 7.22e-01 mass=1.131003e-01
+L2 norm of b: 1.034039e-01
+Initial L2 norm of residual: 3.251079e-02
+=============================================
+
+Iters      resid.norm     conv.rate   rel.res.norm
+-----    ------------    ----------   ------------
+    1    4.758569e-03      0.146369   4.601926e-02
+    2    3.125591e-04      0.065683   3.022702e-03
+    3    2.442019e-05      0.078130   2.361632e-04
+    4    2.027415e-06      0.083022   1.960676e-05
+    5    1.392847e-07      0.068701   1.346998e-06
+    6    9.863361e-09      0.070814   9.538678e-08
+    7    6.363209e-10      0.064514   6.153744e-09
+
+
+Final L2 norm of residual: 6.363209e-10
+
+Time step:   3 | Time: 4.7500e-01 | dt: 2.2500e-01 | CFL:     1.80 | Lin:   7 | min(c)= 5.98e-10 max(c)= 8.87e-01 mass=2.147891e-01
+
+Aggregate Summary:
+--------------------------------------------------------------
+Total number of Non-linear iterations: 3
+Total number of linear iterations:     21
+Avg. LS iterations:                    7.00
+Avg. LS times: (setup, solve, total):  0.0014, 0.0012, 0.0027
+Total LS times: (setup, solve, total): 0.0043, 0.0037, 0.0081
+Avg. LS iterations per timestep:       7.00
+Avg. LS times per timestep: (s, s, t): 0.0014, 0.0012, 0.0027
+--------------------------------------------------------------
+
+=======================================================================================
+
+
+STATISTICS SUMMARY:
+
++------------+-------------+-------------+-------------+------------+------------+--------+
+|            |    LS build |       setup |       solve |    initial |   relative |        |
+|       Path |  times [ms] |  times [ms] |  times [ms] |  res. norm |  res. norm |  iters |
++------------+-------------+-------------+-------------+------------+------------+--------+
+|        1.1 |       0.794 |       1.751 |       1.037 |   6.69e-02 |   3.29e-09 |      7 |
+|        2.2 |       0.136 |       1.206 |       1.359 |   4.53e-02 |   4.54e-09 |      7 |
+|        3.3 |       0.145 |       1.391 |       1.332 |   3.25e-02 |   6.15e-09 |      7 |
++------------+-------------+-------------+-------------+------------+------------+--------+
+

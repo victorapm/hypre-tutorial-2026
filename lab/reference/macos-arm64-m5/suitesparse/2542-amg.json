@@ -1,0 +1,19 @@
+{
+  "matrix_id": 2542,
+  "matrix": "Janna/Emilia_923",
+  "policy": "amg",
+  "solver": "PCG",
+  "status": "converged",
+  "iterations": 18,
+  "relative_residual": 4.71e-09,
+  "relative_error": 8.929854962529718e-06,
+  "setup_ms": 1380.275,
+  "solve_ms": 2938.823,
+  "total_ms": 4319.098,
+  "assembly_ms": 4472.699,
+  "policy_sha256": "bf74fa22d37df3025d220849946f1f8aa2acae7c1d6b42fb96a19af0c0cd3a5d",
+  "input_sha256": "8c9eb77b9de8eb306e20e3d4128b05c8759f9a93a543811d5f31e7557e0b090e",
+  "wall_seconds": 8.905,
+  "exit_code": 0,
+  "log_sha256": "6663501fb37281ad419c5cdad6d77e30f810aae3bd9ee46ab2a57ce232aaefee"
+}

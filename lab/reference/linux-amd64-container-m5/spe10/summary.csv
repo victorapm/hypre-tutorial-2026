@@ -1,0 +1,3 @@
+case,entry,iterations,setup_ms,solve_ms,total_ms,assembly_ms,relative_residual
+darcy-mgr-default,0,23,2502.105,7651.119,10153.224,942.952,9.97e-11
+darcy-mgr-strong,0,19,2434.754,8257.959,10692.713,950.427,9.19e-11

@@ -1,0 +1,15 @@
+{
+  "recorded_date": "2026-07-24",
+  "system": "Polaris",
+  "cpu": "AMD EPYC 7543P",
+  "gpu": "NVIDIA A100 40 GB",
+  "cuda_version": "12.9",
+  "hypredrive_revision": "b59401ce2a99e5848e9f4ced231304961be1e189",
+  "hypre_revision": "2fe79606e97255edcb6efd6ce5be6452815077ab",
+  "problem": "Global 7-point Poisson",
+  "solver": "PCG",
+  "preconditioner": "AMG",
+  "cpu_mpi_ranks": 32,
+  "gpu_mpi_ranks": 1,
+  "statistic": "Median setup and median solve of four measured solver lifecycles after one warm-up; assembly excluded"
+}

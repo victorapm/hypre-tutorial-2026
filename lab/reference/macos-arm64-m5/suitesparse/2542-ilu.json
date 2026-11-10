@@ -1,0 +1,19 @@
+{
+  "matrix_id": 2542,
+  "matrix": "Janna/Emilia_923",
+  "policy": "ilu",
+  "solver": "GMRES(50)",
+  "status": "converged",
+  "iterations": 102,
+  "relative_residual": 9.92e-09,
+  "relative_error": 0.0006985348077130033,
+  "setup_ms": 577.849,
+  "solve_ms": 7348.77,
+  "total_ms": 7926.619,
+  "assembly_ms": 4535.611,
+  "policy_sha256": "3f809e7ecc9446ab1506a4f8141c00e4da00fda982a8beea71bfa60a373371dc",
+  "input_sha256": "8c9eb77b9de8eb306e20e3d4128b05c8759f9a93a543811d5f31e7557e0b090e",
+  "wall_seconds": 12.567,
+  "exit_code": 0,
+  "log_sha256": "8f0d4c8737ec8c7068e6bc300f98fb9848b959348da4024c7b9415eaecb2212f"
+}

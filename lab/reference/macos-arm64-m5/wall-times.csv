@@ -1,0 +1,10 @@
+stage,wall_seconds,exit_code
+readiness-bash,0.101,0
+readiness-zsh,0.107,0
+lab1,2.731,0
+lab2,0.708,0
+lab3,2.025,0
+lab4,3.102,0
+transport,0.284,0
+maxwell,0.505,0
+mpi,0.57,0

@@ -1,0 +1,19 @@
+{
+  "matrix_id": 2543,
+  "matrix": "Janna/Fault_639",
+  "policy": "amg",
+  "solver": "PCG",
+  "status": "converged",
+  "iterations": 24,
+  "relative_residual": 7.51e-09,
+  "relative_error": 1.645717989171381e-05,
+  "setup_ms": 1204.385,
+  "solve_ms": 2680.172,
+  "total_ms": 3884.557,
+  "assembly_ms": 3291.086,
+  "policy_sha256": "d8999b2a7e0a350f1ff9bd53d2200b04dec76cf38c649af088ccfe0da7ffcc2e",
+  "input_sha256": "3532687ad96b4762135bc438e940b7c644727fb6fd8e19eb2099f0a4b6596984",
+  "wall_seconds": 7.308,
+  "exit_code": 0,
+  "log_sha256": "536222a35e7ba934153363957b72550fee638cbd562926db52a1759e3965c038"
+}

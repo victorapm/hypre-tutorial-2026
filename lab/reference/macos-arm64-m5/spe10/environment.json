@@ -1,0 +1,51 @@
+{
+  "recorded_utc": "2026-11-13T15:24:15.026682+00:00",
+  "problem": "SPE10 Model 2 case 2a mixed RT0/P0 Darcy",
+  "platform": "macOS-26.7.1-arm64-arm-64bit-Mach-O",
+  "hypredrive_version": "v0.4.0",
+  "hypredrive_revision": "9ffb54a2621e454f7c060d11b9667f08a0085060",
+  "hypre_version": "v3.2.1",
+  "hypre_revision": "c3feb783b21b3465e30c29e883325aa766a5b8f4",
+  "execution": "CPU; 8 MPI ranks; one thread per rank; processor grid 2x2x2",
+  "drive_direction": "y",
+  "input_file": "SPE10 case 2a spe_perm.dat; 60x220x85; top-down",
+  "input_sha256": "7e5d613bf44dabaec2ed2dd7ebe87e79515bb77ac071dad9d33823efc37c7914",
+  "input_bytes": 57946647,
+  "solve_grid_cells": [
+    30,
+    110,
+    85
+  ],
+  "unknowns": {
+    "flux": 856700,
+    "pressure": 280500,
+    "total": 1137200
+  },
+  "command_wall_seconds": 2.025,
+  "policies": {
+    "darcy-mgr-default": {
+      "file": "lab/configs/darcy-mgr-default.yml",
+      "sha256": "0c98c59b9813c73e0ce275d5c3f4c77a52f8dde44e0804a5669241450a8df35c"
+    },
+    "darcy-mgr-strong": {
+      "file": "lab/configs/darcy-mgr-strong.yml",
+      "sha256": "8187fc80937c799f04a851959b7795b1f20727cba76cd98371c4330ab727de2a"
+    }
+  },
+  "results": {
+    "darcy-mgr-default": {
+      "iterations": "23",
+      "relative_residual": "9.97e-11",
+      "setup_ms": "66.997",
+      "solve_ms": "156.713",
+      "total_ms": "223.71"
+    },
+    "darcy-mgr-strong": {
+      "iterations": "19",
+      "relative_residual": "9.19e-11",
+      "setup_ms": "62.046",
+      "solve_ms": "188.362",
+      "total_ms": "250.408"
+    }
+  }
+}

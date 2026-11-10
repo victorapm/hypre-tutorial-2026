@@ -1,0 +1,19 @@
+{
+  "matrix_id": 1883,
+  "matrix": "McRae/ecology2",
+  "policy": "ilu",
+  "solver": "GMRES(50)",
+  "status": "converged",
+  "iterations": 298,
+  "relative_residual": 9.92e-09,
+  "relative_error": 0.0012111604172480592,
+  "setup_ms": 21.183,
+  "solve_ms": 8507.356,
+  "total_ms": 8528.539,
+  "assembly_ms": 459.167,
+  "policy_sha256": "3d35c5acc7bc7ff63825f2673f3187e01b7764d52cf603dd1c1533a9db4b6817",
+  "input_sha256": "54a1ac678e4d20a2b8b41f86de196dbb0ea5c354cc2cbc8940025ea547202176",
+  "wall_seconds": 9.087,
+  "exit_code": 0,
+  "log_sha256": "0e9416395ab823f9a46f5a4006e6615395b7399d03fd260102bdb1d7a823faf6"
+}

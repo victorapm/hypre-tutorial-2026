@@ -1,0 +1,19 @@
+{
+  "matrix_id": 2547,
+  "matrix": "Janna/StocF-1465",
+  "policy": "amg",
+  "solver": "PCG",
+  "status": "converged",
+  "iterations": 10,
+  "relative_residual": 5.17e-09,
+  "relative_error": 1.54810652890068e-05,
+  "setup_ms": 1155.462,
+  "solve_ms": 1001.645,
+  "total_ms": 2157.107,
+  "assembly_ms": 2140.681,
+  "policy_sha256": "0a1aba16a1ed6765e28ccb96f0065a2fd2a5d2af3f01a71e4833db2c8a5308a1",
+  "input_sha256": "1a91c655d8c43ac3458ab4b04954a304e5a24680310f7b02096f7e1533816305",
+  "wall_seconds": 4.39,
+  "exit_code": 0,
+  "log_sha256": "2dacd745b435ac0c6449c672d80def65ae3c7e5c607cdb2f386fecc396602f4a"
+}

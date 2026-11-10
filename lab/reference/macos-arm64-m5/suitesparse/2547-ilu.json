@@ -1,0 +1,19 @@
+{
+  "matrix_id": 2547,
+  "matrix": "Janna/StocF-1465",
+  "policy": "ilu",
+  "solver": "GMRES(50)",
+  "status": "converged",
+  "iterations": 69,
+  "relative_residual": 9.97e-09,
+  "relative_error": 0.09039163554925922,
+  "setup_ms": 259.108,
+  "solve_ms": 4197.97,
+  "total_ms": 4457.078,
+  "assembly_ms": 2158.623,
+  "policy_sha256": "cfd518f9929fa3b40074cad36ee5546e1169194a1383d0a432cbfc518c004d84",
+  "input_sha256": "1a91c655d8c43ac3458ab4b04954a304e5a24680310f7b02096f7e1533816305",
+  "wall_seconds": 6.765,
+  "exit_code": 0,
+  "log_sha256": "cc8b67d882563d657781ed66b6389e81bf7a2f9b6e4708b870bd81e91d007f69"
+}

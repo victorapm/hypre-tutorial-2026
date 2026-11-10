@@ -1,0 +1,2 @@
+case,entry,iterations,setup_ms,solve_ms,total_ms,assembly_ms,relative_residual
+thermal1-amg-2,0,9,71.131,24.191,95.322,99.367,2.01e-09
